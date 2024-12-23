@@ -1,0 +1,20 @@
+[package]
+name = "r-sbtcp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+
+[[bin]]
+name = "server"
+path = "src/bin/main_server.rs"
+
+[[bin]]
+name = "client"
+path = "src/bin/main_client.rs"
+
+[dependencies]
+byteorder = "1.5.0"
+serde = { version = "1.0.215", features = ["derive"] }
+tokio = { version = "1.41.1", features = ["full"] }
